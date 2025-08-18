@@ -8,9 +8,9 @@ const authButtonVariants = cva(
   {
     variants: {
       variant: {
-        primary: "bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-4 py-2",
-        secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 h-12 px-4 py-2 border border-input-border",
-        ghost: "hover:bg-accent hover:text-accent-foreground h-12 px-4 py-2",
+        primary: "bg-[#351C75] font-inter font-semibold text-base text-primary-foreground hover:bg-[#5C3FA3] h-12 px-2 py-2",
+        secondary: "font-inter font-semibold text-base text-[#351C75] hover:bg-secondary/80 h-12 px-2 py-2 border border-[#351C75]",
+        ghost: "hover:bg-accent hover:text-accent-foreground h-12 px-2 py-2",
       },
       size: {
         default: "h-12 px-4 py-2",

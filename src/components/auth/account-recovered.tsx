@@ -15,21 +15,21 @@ export const AccountRecovered: React.FC<AccountRecoveredProps> = ({ onContinue }
             <img 
               src={successIcon} 
               alt="Success" 
-              className="w-20 h-20"
+              className="w-40 h-40"
             />
           </div>
           
-          <h2 className="text-2xl font-semibold text-foreground">
+          <h2 className="text-3xl font-inter font-bold text-foreground">
             Account Recovered
           </h2>
           
-          <p className="text-muted-foreground">
+          <p className="font-inter text-[#8C8C8C]">
             Your account has been successfully recovered,<br />
             you can log in back with a new password
           </p>
         </div>
 
-        <AuthButton onClick={onContinue} className="w-full">
+        <AuthButton onClick={onContinue} className="w-full" variant="secondary">
           CONTINUE
         </AuthButton>
       </div>
