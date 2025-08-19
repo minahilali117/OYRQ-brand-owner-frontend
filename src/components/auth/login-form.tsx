@@ -65,10 +65,10 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword }) => {
                   >
                     {showPassword ? (
                       // Unhide icon (password visible)
-                      <img src={unhideIcon} alt="Unhide" className="h-5 w-5" />
+                      <img src={unhideIcon} alt="Unhide" className="h-5 w-5 filter grayscale brightness-150 opacity-60" />
                     ) : (
                       // Hide icon (password hidden)
-                      <img src={hideIcon} alt="Hide" className="h-5 w-5" />
+                      <img src={hideIcon} alt="Hide" className="h-5 w-5 filter grayscale brightness-150 opacity-60" />
                     )}
                   </button>
                 </div>
