@@ -16,7 +16,7 @@ export const ForgotPassword: React.FC<ForgotPasswordProps> = ({ onBack, onContin
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background p-8">
+    <div className="min-h-screen flex flex-col items-center justify-center p-8" style={{ backgroundColor: '#fcf8fd' }}>
       <h1 className="text-6xl font-brand font-bold text-[#351C75] mb-8 text-center">OYRQ</h1>
       <div className="relative w-full max-w-md mx-auto">
         <div className="flex items-center mb-6" style={{ position: 'relative' }}>

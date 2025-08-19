@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import NotificationIcon from '@/assets/icons/Notification.png'
 import ProfileImage from '@/assets/images/pfp.png'
 import NotificationDropdown from './NotificationDropdown'
@@ -9,9 +10,14 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ title }) => {
   const [showNotifications, setShowNotifications] = useState(false)
+  const navigate = useNavigate();
 
   const toggleNotifications = () => {
     setShowNotifications(!showNotifications)
+  }
+
+  const handleProfileClick = () => {
+    navigate('/profile');
   }
 
   return (
@@ -41,10 +47,16 @@ const Header: React.FC<HeaderProps> = ({ title }) => {
         </div>
         
         {/* Profile Image */}
-        <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-200 hover:border-[#351C75] transition-colors cursor-pointer">
-          <img 
-            src={ProfileImage} 
-            alt="Profile" 
+        <div
+          className="w-12 h-12 rounded-full overflow-hidden border-2 border-gray-200 hover:border-[#351C75] transition-colors cursor-pointer"
+          onClick={handleProfileClick}
+          role="button"
+          tabIndex={0}
+          aria-label="Go to profile"
+        >
+          <img
+            src={ProfileImage}
+            alt="Profile"
             className="w-full h-full object-cover"
           />
         </div>

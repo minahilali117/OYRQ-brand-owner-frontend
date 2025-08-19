@@ -15,8 +15,8 @@ const DashboardCards: React.FC = () => {
             <img src={OrdersIcon} alt="Orders" className="w-5 h-5" />
           </div>
           <div className="flex items-center space-x-1">
-            <img src={MiniGraphIcon} alt="Graph" className="w-6 h-3" />
-            <span className="text-green-500 text-xs font-poppins font-medium">+12%</span>
+            <img src={MiniGraphIcon} alt="Graph" className="w-17 h-7" />
+            <span className="text-green-500 font-poppins font-medium">+12%</span>
           </div>
         </div>
         <div>
@@ -32,8 +32,8 @@ const DashboardCards: React.FC = () => {
             <img src={TotalRevenueIcon} alt="Revenue" className="w-5 h-5" />
           </div>
           <div className="flex items-center space-x-1">
-            <img src={MiniGraphIcon} alt="Graph" className="w-6 h-3" />
-            <span className="text-green-500 text-xs font-poppins font-medium">+20%</span>
+            <img src={MiniGraphIcon} alt="Graph" className="w-17 h-7" />
+            <span className="text-green-500 font-poppins font-medium">+20%</span>
           </div>
         </div>
         <div>

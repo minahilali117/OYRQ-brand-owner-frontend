@@ -246,7 +246,7 @@ const EditProduct: React.FC<EditProductProps> = ({ onBack, productData: initialD
                 />
               </div>
               {/* Add New Image Button */}
-              <div className="w-24 h-24 border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center cursor-pointer hover:border-gray-400 transition-colors bg-white">
+              <div className="w-24 h-24 border-2 border-solid border-gray-300 rounded-lg flex items-center justify-center cursor-pointer hover:border-gray-400 transition-colors bg-white">
                 <svg className="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
                 </svg>

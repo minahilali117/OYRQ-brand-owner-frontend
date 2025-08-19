@@ -30,8 +30,8 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword }) => {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left side - Login Form (scrollable) */}
-      <div className="flex-1 flex items-center justify-center bg-white p-8 overflow-y-auto h-screen">
+      {/* Left side - Login Form */}
+      <div className="flex-1 flex items-center justify-center" style={{ backgroundColor: '#fcf8fd' }}>
         <div className="w-full max-w-md space-y-8">
           <div>
             <h1 className="text-6xl font-brand font-bold text-[#351C75] mb-8 text-center">OYRQ</h1>
@@ -114,10 +114,10 @@ export const LoginForm: React.FC<LoginFormProps> = ({ onForgotPassword }) => {
         </div>
       </div>
 
-      {/* Right side - Background Image (locked) */}
-      <div className="hidden lg:block flex-1 relative h-screen overflow-hidden">
+      {/* Right side - Background Image */}
+      <div className="hidden lg:block flex-1 relative">
         <div
-          className="h-full w-full bg-cover bg-center bg-no-repeat fixed top-0 right-0 w-1/2"
+          className="h-full w-full bg-cover bg-center"
           style={{ backgroundImage: `url(${loginBg})` }}
         >
         </div>
